@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+<style>
+body {
+    background-color: linen;
+}
+</style>
+<form name = "calculator"><center><br><br><br>
+<input type="button" value="  1  " onclick="document.calculator.result.value+='  1  '">
+<input type="button" value="  2  " onclick="document.calculator.result.value+='  2  '">
+<input type="button" value="  3  " onclick="document.calculator.result.value+='  3  '">
+<input type="button" value=" + " onclick="document.calculator.result.value+=' + '">
+<br>
+<input type="button" value="  4  " onclick="document.calculator.result.value+='  4  '">
+<input type="button" value="  5  " onclick="document.calculator.result.value+='  5  '">
+<input type="button" value="  6  " onclick="document.calculator.result.value+='  6  '">
+<input type="button" value=" - " onclick="document.calculator.result.value+=' - '">
+<br>
+<input type="button" value="  7  " onclick="document.calculator.result.value+='  7  '">
+<input type="button" value="  8  " onclick="document.calculator.result.value+='  8  '">
+<input type="button" value="  9  " onclick="document.calculator.result.value+='  9  '">
+<input type="button" value=" * " onclick="document.calculator.result.value+=' * '">
+<br>
+<input type="button" value="  0  " onclick="document.calculator.result.value+='  0  '">
+<input type="button" value=" % " onclick="document.calculator.result.value+=' % '">
+<input type="button" value=" / " onclick="document.calculator.result.value+=' / '">
+<br>
+<input type="reset" value="Reset"> 
+<input type="button" value="   =   " onclick="document.calculator.result.value=eval(document.calculator.result.value)">
+<br><br><br>
+Solution<input type="textfield" name="result" value="">
+</center>
+</form>
+</body>
+</html>
